@@ -19,7 +19,7 @@ public class Conditionals {
 //		percent();
 
 		percentage();
-		flowChart();
+		flowChart(3, 5, true);
 
 	}
 
@@ -77,9 +77,13 @@ public class Conditionals {
 
 	}
 
-	public static void flowChart(int a, int b, boolean bn) {
+	public static double flowChart(double a, double b, boolean bn) {
+
 		if (bn)
-			System.out.println("Sorry");
+			System.out.println(a + b);
+		else
+			System.out.println(a / b);
+		return 0;
 
 	}
 }
