@@ -20,6 +20,8 @@ public class Conditionals {
 
 		percentage();
 		flowChart(3, 5, true);
+		blackJack(20, 1);
+		flowChart1(4001);
 
 	}
 
@@ -64,7 +66,7 @@ public class Conditionals {
 		else
 			System.out.println("Pass ");
 
-//		if else statement to show students how many exams they passed
+//		if  statement to show students how many exams they passed
 
 		if (physics < pass && biology < pass && chemistry < pass)
 			System.out.println("Fail you failed all exams ");
@@ -77,6 +79,9 @@ public class Conditionals {
 
 	}
 
+//	FLOW CHART
+//	if else statement to change mathematical equation depending on boolean
+
 	public static double flowChart(double a, double b, boolean bn) {
 
 		if (bn)
@@ -84,6 +89,31 @@ public class Conditionals {
 		else
 			System.out.println(a / b);
 		return 0;
+
+	}
+
+	public static double flowChart1(double a) {
+
+		if (a <= 2000)
+			System.out.println("a");
+		if (a > 2000 && a > 6000)
+			System.out.println("b");
+		if (a > 2000 && a < 6000)
+			System.out.println("c");
+
+		return 0;
+
+	}
+
+//	BLACK JACK
+
+	public static double blackJack(double a, double b) {
+		double sum = a + b;
+		if (a + b == 21)
+			System.out.println("yez");
+		else
+			System.out.println("NO");
+		return sum;
 
 	}
 }
