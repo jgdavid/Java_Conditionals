@@ -92,18 +92,32 @@ public class Conditionals {
 
 	}
 
-	public static double flowChart1(double a) {
-
-		if (a <= 2000)
-			System.out.println("a");
-		if (a > 2000 && a > 6000)
-			System.out.println("b");
-		if (a > 2000 && a < 6000)
-			System.out.println("c");
-
-		return 0;
-
-	}
+	public static double flowChart1(double a, boolean b) {
+		if (b)
+			if (a >= 2000)
+				System.out.println("a");
+			if (a > 2000 && a < 56000)
+				System.out.println("b");
+			if (a > 2000 && a < 6000)
+				System.out.println("c");
+		else   
+		if (!b)
+				System.out.println("1");
+			if (a < 2000)
+				System.out.println("2");
+			if (a < 100);
+				System.out.println("3");
+			if (a > 100 && a < 600);
+				System.out.println("4");
+			if  (a > 500 && a < 600);
+				System.out.println("5");
+			if (a > 600);
+				System.out.println("6");
+			if (a < 500 );
+				System.out.println("7");
+			return 0;
+	
+		}
 
 //	BLACK JACK
 
