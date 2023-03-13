@@ -103,7 +103,7 @@ public class Conditionals {
 		else   
 		if (!b)
 				System.out.println("1");
-			if (a < 2000)
+			else if (a < 2000)
 				System.out.println("2");
 			if (a < 100);
 				System.out.println("3");
